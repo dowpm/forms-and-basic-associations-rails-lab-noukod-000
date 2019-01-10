@@ -10,7 +10,7 @@
   <br/>
 
   <%= f.label :genre_name %>
-  <%= f.check_box(:genre_name, Genre.all) %>
+  <%= f.collection_select :genre_id, Genre.all, :id, :name %>
 
   <%= f.submit %>
 <% end %>
